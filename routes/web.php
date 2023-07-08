@@ -1,10 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use resources\views\front\index;
-use App\Http\Controllers\Front\HomeController;
-use App\Http\Controllers\AboutController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +13,5 @@ use App\Http\Controllers\AboutController;
 |
 */
 
-Route::get('/', [HomeController::class,'index']);
+Route::get('/', [\App\Http\Controllers\Front\HomeController::class, 'index']);
 
