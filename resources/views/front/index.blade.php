@@ -10,11 +10,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <span>Bag,kids</span>
+                        <span>Balo, Trẻ em</span>
                         <h1>Black friday</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore</p>
-                        <a href="#" class="primary-btn">Shop Now</a>
+                        <a href="#" class="primary-btn">Mua ngay</a>
                     </div>
                 </div>
                 <div class="off-card">
@@ -34,7 +34,7 @@
                 <div class="single-banner">
                     <img src="front/img/banner-1.jpg" alt="">
                     <div class="inner-text">
-                        <h4>Men’s</h4>
+                        <h4>Nam</h4>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 <div class="single-banner">
                     <img src="front/img/banner-2.jpg" alt="">
                     <div class="inner-text">
-                        <h4>Women's</h4>
+                        <h4>Nữ</h4>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                 <div class="single-banner">
                     <img src="front/img/banner-3.jpg" alt="">
                     <div class="inner-text">
-                        <h4>Kid's</h4>
+                        <h4>Trẻ em</h4>
                     </div>
                 </div>
             </div>
@@ -65,20 +65,23 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="product-large set-bg" data-setbg="front/img/products/women-large.jpg">
-                    <h2>Women’s</h2>
-                    <a href="#">Discover More</a>
+                    <h2>Thời trang nữ</h2>
+                    <a href="#">Khám phá</a>
                 </div>
             </div>
             <div class="col-lg-8 offset-lg-1">
                 <div class="filter-control">
                     <ul>
-                        <li class="active">Clothings</li>
-                        <li>HandBag</li>
-                        <li>Shoes</li>
-                        <li>Accessories</li>
+                        <li class="active">Quần áo</li>
+                        <li>Túi xách</li>
+                        <li>Giày</li>
+                        <li>Phụ kiện</li>
                     </ul>
                 </div>
                 <div class="product-slider owl-carousel">
+
+                    @foreach($womenProducts as $womenProduct)
+
                     <div class="product-item">
                         <div class="pi-pic">
                             <img src="front/img/products/women-1.jpg" alt="">
@@ -88,87 +91,28 @@
                             </div>
                             <ul>
                                 <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="product.html">+ Quick View</a></li>
+                                <li class="quick-view"><a href="product.html">+ Xem nhanh</a></li>
                                 <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                             </ul>
                         </div>
                         <div class="pi-text">
-                            <div class="catagory-name">Coat</div>
+                            <div class="catagory-name">{{ $womenProduct->tag }}</div>
                             <a href="#">
-                                <h5>Pure Pineapple</h5>
+                                <h5>{{ $womenProduct->name }}</h5>
                             </a>
                             <div class="product-price">
-                                $14.00
-                                <span>$35.00</span>
+                                @if( $womenProduct->discount != null )
+                                    ${{ $womenProduct->discount }}
+                                    <span>${{ $womenProduct->price }}</span>
+                                @else
+                                    ${{ $womenProduct->price }}
+                                @endif
                             </div>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="front/img/products/women-2.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="product.html">+ Quick View</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">Shoes</div>
-                            <a href="#">
-                                <h5>Guangzhou sweater</h5>
-                            </a>
-                            <div class="product-price">
-                                $13.00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="front/img/products/women-3.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="product.html">+ Quick View</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">Towel</div>
-                            <a href="#">
-                                <h5>Pure Pineapple</h5>
-                            </a>
-                            <div class="product-price">
-                                $34.00
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="front/img/products/women-4.jpg" alt="">
-                            <div class="icon">
-                                <i class="icon_heart_alt"></i>
-                            </div>
-                            <ul>
-                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="product.html">+ Quick View</a></li>
-                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">Towel</div>
-                            <a href="#">
-                                <h5>Converse Shoes</h5>
-                            </a>
-                            <div class="product-price">
-                                $34.00
-                            </div>
-                        </div>
-                    </div>
+
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -180,33 +124,33 @@
     <div class="container">
         <div class="col-lg-6 text-center">
             <div class="section-title">
-                <h2>Deal Of The Week</h2>
+                <h2>Deal sốc của tuần</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore</p>
                 <div class="product-price">
-                    $35.00
-                    <span>/ HanBag</span>
+                    359.000đ
+                    <span>/ Túi xách</span>
                 </div>
             </div>
             <div class="countdown-timer" id="countdown">
                 <div class="cd-item">
                     <span>56</span>
-                    <p>Days</p>
+                    <p>Ngày</p>
                 </div>
                 <div class="cd-item">
                     <span>12</span>
-                    <p>Hrs</p>
+                    <p>Giờ</p>
                 </div>
                 <div class="cd-item">
                     <span>40</span>
-                    <p>Mins</p>
+                    <p>Phút</p>
                 </div>
                 <div class="cd-item">
                     <span>52</span>
-                    <p>Secs</p>
+                    <p>Giây</p>
                 </div>
             </div>
-            <a href="#" class="primary-btn">Shop Now</a>
+            <a href="#" class="primary-btn">Mua ngay</a>
         </div>
     </div>
 </section>
@@ -219,10 +163,10 @@
             <div class="col-lg-8">
                 <div class="filter-control">
                     <ul>
-                        <li class="active">Clothings</li>
-                        <li>HandBag</li>
-                        <li>Shoes</li>
-                        <li>Accessories</li>
+                        <li class="active">Quần áo</li>
+                        <li>Túi-Balo</li>
+                        <li>Giày</li>
+                        <li>Phụ kiện</li>
                     </ul>
                 </div>
                 <div class="product-slider owl-carousel">
@@ -235,7 +179,7 @@
                             </div>
                             <ul>
                                 <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="product.html">+ Quick View</a></li>
+                                <li class="quick-view"><a href="product.html">+ Xem nhanh</a></li>
                                 <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                             </ul>
                         </div>
@@ -320,8 +264,8 @@
             </div>
             <div class="col-lg-3 offset-lg-1">
                 <div class="product-large set-bg m-large" data-setbg="front/img/products/man-large.jpg">
-                    <h2>Men’s</h2>
-                    <a href="#">Discover More</a>
+                    <h2>Thời trang nam</h2>
+                    <a href="#">Khám phá</a>
                 </div>
             </div>
         </div>
@@ -334,37 +278,37 @@
     <div class="insta-item set-bg" data-setbg="front/img/insta-1.jpg">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">codeleanon</a></h5>
+            <h5><a href="#">AnhPham</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="front/img/insta-2.jpg">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">codeleanon</a></h5>
+            <h5><a href="#">AnhPham</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="front/img/insta-3.jpg">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">codeleanon</a></h5>
+            <h5><a href="#">AnhPham</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="front/img/insta-4.jpg">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">codeleanon</a></h5>
+            <h5><a href="#">AnhPham</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="front/img/insta-5.jpg">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">codeleanon</a></h5>
+            <h5><a href="#">AnhPham</a></h5>
         </div>
     </div>
     <div class="insta-item set-bg" data-setbg="front/img/insta-6.jpg">
         <div class="inside-text">
             <i class="ti-instagram"></i>
-            <h5><a href="#">codeleanon</a></h5>
+            <h5><a href="#">AnhPham</a></h5>
         </div>
     </div>
 </div>
@@ -388,7 +332,7 @@
                         <div class="tag-list">
                             <div class="tag-item">
                                 <i class="fa fa-calendar-o"></i>
-                                May 4,2023
+                                4/5,2023
                             </div>
                             <div class="tag-item">
                                 <i class="fa fa-comment-o"></i>
@@ -396,7 +340,7 @@
                             </div>
                         </div>
                         <a href="#">
-                            <h4>The Best Street Style From London Fashion Week</h4>
+                            <h4>Title Blog</h4>
                         </a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua.</p>
@@ -410,7 +354,7 @@
                         <div class="tag-list">
                             <div class="tag-item">
                                 <i class="fa fa-calendar-o"></i>
-                                May 4,2023
+                                4/5,2023
                             </div>
                             <div class="tag-item">
                                 <i class="fa fa-comment-o"></i>
@@ -418,7 +362,7 @@
                             </div>
                         </div>
                         <a href="#">
-                            <h4>Vogue's Ultimate Guide To Autumn/Winter 2020 Shoes</h4>
+                            <h4>Title Blog</h4>
                         </a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua.</p>
@@ -432,7 +376,7 @@
                         <div class="tag-list">
                             <div class="tag-item">
                                 <i class="fa fa-calendar-o"></i>
-                                May 4,2023
+                                4/5,2023
                             </div>
                             <div class="tag-item">
                                 <i class="fa fa-comment-o"></i>
@@ -440,7 +384,7 @@
                             </div>
                         </div>
                         <a href="#">
-                            <h4>How To Brighten Your Wardrobe With A Dash Of Lime</h4>
+                            <h4>Title Blog</h4>
                         </a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua.</p>
@@ -456,8 +400,8 @@
                             <img src="front/img/icon-1.png" alt="">
                         </div>
                         <div class="sb-text">
-                            <h6>Free Shipping</h6>
-                            <p>For all oder over $99</p>
+                            <h6>Giảm phí vận chuyển</h6>
+                            <p>Cho hóa đơn trên 99k</p>
                         </div>
                     </div>
                 </div>
@@ -467,8 +411,8 @@
                             <img src="front/img/icon-2.png" alt="">
                         </div>
                         <div class="sb-text">
-                            <h6>Delivery On Time</h6>
-                            <p>If good have prolems</p>
+                            <h6>Giao hàng đúng hạn</h6>
+                            <p>Uy tín, có trách nhiệm</p>
                         </div>
                     </div>
                 </div>
@@ -478,8 +422,8 @@
                             <img src="front/img/icon-1.png" alt="">
                         </div>
                         <div class="sb-text">
-                            <h6>Secure Payment</h6>
-                            <p>100% secure payment</p>
+                            <h6>Thanh toán an toàn</h6>
+                            <p>100% được bảo mật</p>
                         </div>
                     </div>
                 </div>

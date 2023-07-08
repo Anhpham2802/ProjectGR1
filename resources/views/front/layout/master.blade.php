@@ -44,11 +44,11 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="login.html" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                    <a href="login.html" class="login-panel"><i class="fa fa-user"></i>Đăng nhập</a>
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
+                            <option value='yu' data-image="front/img/flag.png" data-imagecss="flag yu" data-title="Bangladesh">VietNam </option>
                             <option value='yt' data-image="front/img/flag-1.jpg" data-imagecss="flag yt" data-title="English">English</option>
-                            <option value='yu' data-image="front/img/flag-2.jpg" data-imagecss="flag yu" data-title="Bangladesh">German </option>
                         </select>
                     </div>
                     <div class="top-socail">
@@ -66,15 +66,15 @@
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <a href="./index.html">
-                                <img src="front/img/logo.png" height="25" alt="">
+                                <img src="front/img/myshop.png" height="35" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
-                            <button type="button" class="category-btn">All Categories</button>
+                            <button type="button" class="category-btn">Mọi sản phẩm</button>
                             <div class="input-group">
-                                <input type="text" placeholder="What do you need?">
+                                <input type="text" placeholder="Bạn cần gì ❣️">
                                 <button type="button"><i class="ti-search"></i></button>
                             </div>
                         </div>
@@ -144,40 +144,40 @@
                 <div class="nav-depart">
                     <div class="depart-btn">
                         <i class="ti-menu"></i>
-                        <span>All departments</span>
+                        <span>Tất cả sản phẩm</span>
                         <ul class="depart-hover">
-                            <li class="active"><a href="#">Women's Clothing</a> </li>
-                            <li><a href="#">Men's Clothing</a></li>
-                            <li><a href="#">Underwear</a></li>
-                            <li><a href="#">Kid's Clothing</a></li>
-                            <li><a href="#">Brand codeleanon</a></li>
-                            <li><a href="#">Accessories/Shoes</a></li>
-                            <li><a href="#">Luxury Brand</a></li>
-                            <li><a href="#">Brand Outdoor Apparel</a></li>
+                            <li class="active"><a href="#">Trang phục cho nữ</a> </li>
+                            <li><a href="#">Trang phục cho nam</a></li>
+                            <li><a href="#">Nội y 👘</a></li>
+                            <li><a href="#">Trang phục trẻ em</a></li>
+                            <li><a href="#">Local brand 🍍</a></li>
+                            <li><a href="#">Phụ kiện/Giày 👒</a></li>
+                            <li><a href="#">Thời trang cao cấp</a></li>
+                            <li><a href="#">Trang phục thể thao</a></li>
                         </ul>
                     </div>
                 </div>
                 <nav class="nav-menu mobile=menu">
                     <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
-                        <li><a href="#">Collection</a>
+                        <li class="active"><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./shop.html">Cửa hàng</a></li>
+                        <li><a href="#">Bộ sưu tập</a>
                             <ul class="dropdown">
-                                <li><a href="#">Men's</a> </li>
-                                <li><a href="#">Women's</a> </li>
-                                <li><a href="#">Kid's</a> </li>
+                                <li><a href="#">Đồ nam</a> </li>
+                                <li><a href="#">Đồ nữ</a> </li>
+                                <li><a href="#">Đồ trẻ em</a> </li>
                             </ul>
                         </li>
-                        <li><a href="..blog.html"></a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="#">Pages</a>
+                        <!-- <li><a href="..blog.html"></a></li> -->
+                        <li><a href="./contact.html">Liên hệ</a></li>
+                        <li><a href="#">Trang</a>
                             <ul class="dropdown">
-                                <li><a href="./blog-details.html">Blog Details</a></li>
-                                <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                <li><a href="./check-out.html">Checkout</a></li>
-                                <li><a href="./faq.html">Faq</a></li>
-                                <li><a href="./register.html">Register</a></li>
-                                <li><a href="./login.html">Login</a></li>
+                                <!-- <li><a href="./blog-details.html">Chi tiết bài đăng</a></li> -->
+                                <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
+                                <li><a href="./check-out.html">Thanh toán</a></li>
+                                <li><a href="./faq.html">Câu hỏi thường gặp</a></li>
+                                <li><a href="./register.html">Đăng ký</a></li>
+                                <li><a href="./login.html">Đăng nhập</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -193,7 +193,7 @@
 
 
     <!-- Partner Logo Section Begin -->
-    <div class="partner-logo">
+    <!-- <div class="partner-logo">
         <div class="container">
             <div class="logo-carousel owl-carousel">
                 <div class="logo-item">
@@ -223,7 +223,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Partner Logo Section End -->
 
     <!-- Footer Section Begin -->
@@ -233,11 +233,11 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="front/img/footer-logo.png" height="25" alt=""></a>
+                            <a href="#"><img src="front/img/footer-logo.png" height="35" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: Dai La, Hai Ba Trung, Ha Noi</li>
-                            <li>Phone: +65 11.188.888</li>
+                            <li>Phone: +65 88.888.888</li>
                             <li>Email: Anhcherry2802@gmail.com</li>
                         </ul>
                         <div class="footer-social">
@@ -250,33 +250,33 @@
                 </div>
                 <div class="col-lg-2 offset-lg-1">
                     <div class="footer-widget">
-                        <h5>Information</h5>
+                        <h5>TRỢ GIÚP</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Checkout</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Serivius</a></li>
+                            <li><a href="#">Cửa hàng</a></li>
+                            <li><a href="#">Thanh toán</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Hỗ trợ</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="footer-widget">
-                        <h5>My Account</h5>
+                        <h5>TÀI KHOẢN</h5>
                         <ul>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Shopping Cart</a></li>
-                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Tài khoản của bạn</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Giỏ hàng</a></li>
+                            <li><a href="#">Cửa hàng</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="newslatter-item">
-                        <h5>Join Our Newsletter Now</h5>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <h5>THÔNG TIN ĐẾN CỬA HÀNG</h5>
+                        <p>Nhận thông tin mới nhất về cửa hàng và các ưu đãi đặc biệt của chúng tôi 💗</p>
                         <form action="#" class="subscribe-form">
-                            <input type="text" placeholder="Enter Your Mail">
-                            <button type="button">Subscribe</button>
+                            <input type="text" placeholder="Nhập email của bạn">
+                            <button type="button">Gửi</button>
                         </form>
                     </div>
                 </div>
@@ -287,11 +287,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="copyright-text">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright <script>
                                 document.write(new Date().getFullYear());
                             </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">AnhPham</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="payment-pic">
                             <img src="front/img/payment-method.png" alt="">
