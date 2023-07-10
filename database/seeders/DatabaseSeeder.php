@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'a@gmail.com',
                 'password' => Hash::make('123456'),
                 'avatar' => null,
-                'level' => 0,
+                'level' => 2,
                 'description' => null,
             ],
             [

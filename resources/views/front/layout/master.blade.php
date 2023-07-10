@@ -2,6 +2,7 @@
 <html lang="zxx">
 
 <head>
+    <base href="{{ asset('/') }}">
     <meta charset="UTF-8">
     <meta name="description" content="codelean Template">
     <meta name="keywords" content="codelean, unica, creative, html">
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="front/css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="front/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="front/css/style.css" type="text/css">
+    <link rel="stylesheet" href="front/css/account.css" type="text/css">
 </head>
 
 <body>
@@ -44,14 +46,23 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="login.html" class="login-panel"><i class="fa fa-user"></i>Đăng nhập</a>
-                    <div class="lan-selector">
+
+                    @if(Auth::check())
+                        <a href="./account/logout" class="login-panel"><i class="fa fa-user">
+                        </i>{{Auth::user()->name}} <i class="fa fa-sign-out" style="margin-left: 5px"></i></a>
+                    @else
+                        <a href="./account/login" class="login-panel"><i class="fa fa-user">
+                        </i>Đăng nhập</a>
+                    @endif
+
+
+                    <!-- <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
                             <option value='yu' data-image="front/img/flag.png" data-imagecss="flag yu" data-title="Bangladesh">VietNam </option>
                             <option value='yt' data-image="front/img/flag-1.jpg" data-imagecss="flag yt" data-title="English">English</option>
                         </select>
-                    </div>
-                    <div class="top-socail">
+                    </div> -->
+                    <div class="lan-selector">
                         <a href="#"><i class="ti-facebook"></i></a>
                         <a href="#"><i class="ti-twitter-alt"></i></a>
                         <a href="#"><i class="ti-linkedin"></i></a>
@@ -65,7 +76,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
-                            <a href="./index.html">
+                            <a href="#">
                                 <img src="front/img/myshop.png" height="35" alt="">
                             </a>
                         </div>
@@ -176,8 +187,8 @@
                                 <li><a href="./shopping-cart.html">Giỏ hàng</a></li>
                                 <li><a href="./check-out.html">Thanh toán</a></li>
                                 <li><a href="./faq.html">Câu hỏi thường gặp</a></li>
-                                <li><a href="./register.html">Đăng ký</a></li>
-                                <li><a href="./login.html">Đăng nhập</a></li>
+                                <li><a href="./account/register">Đăng ký</a></li>
+                                <li><a href="./account/login">Đăng nhập</a></li>
                             </ul>
                         </li>
                     </ul>

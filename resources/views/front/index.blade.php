@@ -72,45 +72,45 @@
             <div class="col-lg-8 offset-lg-1">
                 <div class="filter-control">
                     <ul>
-                        <li class="item active" data-tag="*" data-category="women">All</li>
-                        <li class="item" data-tag=".Clothing" data-category="women">Clothings</li>
-                        <li class="item" data-tag=".Handbag" data-category="women">HandBag</li>
-                        <li class="item" data-tag=".Shoes" data-category="women">Shoes</li>
-                        <li class="item" data-tag=".Accessories" data-category="women">Accessories</li>
+                        <li class="item active" data-tag="*" data-category="women">Tất cả</li>
+                        <li class="item" data-tag=".Clothing" data-category="women">Quần áo</li>
+                        <li class="item" data-tag=".Handbag" data-category="women">Túi-Balo</li>
+                        <li class="item" data-tag=".Shoes" data-category="women">Giày</li>
+                        <li class="item" data-tag=".Accessories" data-category="women">Phụ kiện</li>
                     </ul>
                 </div>
                 <div class="product-slider owl-carousel women">
                     @foreach($womenProducts as $womenProduct)
-                        <div class="product-item item {{$womenProduct->tag}}">
-                            <div class="pi-pic">
-                                <img src="front/img/products/{{$womenProduct->productImages[0]->path}}" alt="">
-                                @if($womenProduct->discount != null)
-                                    <div class="sale">Sale</div>
-                                @endif
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
+                    <div class="product-item item {{$womenProduct->tag}}">
+                        <div class="pi-pic">
+                            <img src="front/img/products/{{$womenProduct->productImages[0]->path}}" alt="">
+                            @if($womenProduct->discount != null)
+                            <div class="sale">Sale</div>
+                            @endif
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
                             </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">{{$womenProduct->tag}}</div>
-                                <a href="#">
-                                    <h5>{{$womenProduct->name}}</h5>
-                                </a>
-                                <div class="product-price">
-                                    @if($womenProduct->discount != null)
-                                        {{$womenProduct->discount}}
-                                        <span>${{$womenProduct->price}}</span>
-                                    @else
-                                        ${{$womenProduct->price}}
-                                    @endif
-                                </div>
+                            <ul>
+                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a href="product.html">+ Xem nhanh</a></li>
+                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">{{$womenProduct->tag}}</div>
+                            <a href="#">
+                                <h5>{{$womenProduct->name}}</h5>
+                            </a>
+                            <div class="product-price">
+                                @if($womenProduct->discount != null)
+                                {{$womenProduct->discount}}
+                                <span>${{$womenProduct->price}}</span>
+                                @else
+                                ${{$womenProduct->price}}
+                                @endif
                             </div>
                         </div>
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -162,45 +162,45 @@
             <div class="col-lg-8">
                 <div class="filter-control">
                     <ul>
-                        <li class="item active" data-tag="*" data-category="men">All</li>
-                        <li class="item" data-tag=".Clothing" data-category="men">Clothings</li>
-                        <li class="item" data-tag=".Handbag" data-category="men">HandBag</li>
-                        <li class="item" data-tag=".Shoes" data-category="men">Shoes</li>
-                        <li class="item" data-tag=".Accessories" data-category="men">Accessories</li>
+                        <li class="item active" data-tag="*" data-category="men">Tất cả</li>
+                        <li class="item" data-tag=".Clothing" data-category="men">Quần áo</li>
+                        <li class="item" data-tag=".Handbag" data-category="men">Túi - Balo</li>
+                        <li class="item" data-tag=".Shoes" data-category="men">Giày</li>
+                        <li class="item" data-tag=".Accessories" data-category="men">Phụ kiện</li>
                     </ul>
                 </div>
                 <div class="product-slider owl-carousel men">
                     @foreach($menProducts as $menProduct)
-                        <div class="product-item item {{$menProduct->tag}}">
-                            <div class="pi-pic">
-                                <img src="front/img/products/{{$menProduct->productImages[0]->path}}" alt="">
-                                @if($menProduct->discount != null)
-                                    <div class="sale">Sale</div>
-                                @endif
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
-                                <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="product.html">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
+                    <div class="product-item item {{$menProduct->tag}}">
+                        <div class="pi-pic">
+                            <img src="front/img/products/{{$menProduct->productImages[0]->path}}" alt="">
+                            @if($menProduct->discount != null)
+                            <div class="sale">Sale</div>
+                            @endif
+                            <div class="icon">
+                                <i class="icon_heart_alt"></i>
                             </div>
-                            <div class="pi-text">
-                                <div class="catagory-name">{{$menProduct->tag}}</div>
-                                <a href="#">
-                                    <h5>{{$menProduct->name}}</h5>
-                                </a>
-                                <div class="product-price">
-                                    @if($menProduct->discount != null)
-                                        {{$menProduct->discount}}
-                                        <span>${{$menProduct->price}}</span>
-                                    @else
-                                        ${{$menProduct->price}}
-                                    @endif
-                                </div>
+                            <ul>
+                                <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
+                                <li class="quick-view"><a href="product.html">+ Xem nhanh</a></li>
+                                <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="pi-text">
+                            <div class="catagory-name">{{$menProduct->tag}}</div>
+                            <a href="#">
+                                <h5>{{$menProduct->name}}</h5>
+                            </a>
+                            <div class="product-price">
+                                @if($menProduct->discount != null)
+                                {{$menProduct->discount}}
+                                <span>${{$menProduct->price}}</span>
+                                @else
+                                ${{$menProduct->price}}
+                                @endif
                             </div>
                         </div>
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -257,7 +257,7 @@
 <!-- Instagram Section End -->
 
 <!-- Latest Blog Section Begin -->
-<section class="latest-blog spad">
+<!-- <section class="latest-blog spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -333,45 +333,45 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+<div class="benefit-items">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="single-benefit">
+                <div class="sb-icon">
+                    <img src="front/img/icon-1.png" alt="">
+                </div>
+                <div class="sb-text">
+                    <h6>Giảm phí vận chuyển</h6>
+                    <p>Cho hóa đơn trên 99k</p>
+                </div>
+            </div>
         </div>
-        <div class="benefit-items">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="single-benefit">
-                        <div class="sb-icon">
-                            <img src="front/img/icon-1.png" alt="">
-                        </div>
-                        <div class="sb-text">
-                            <h6>Giảm phí vận chuyển</h6>
-                            <p>Cho hóa đơn trên 99k</p>
-                        </div>
-                    </div>
+        <div class="col-lg-4">
+            <div class="single-benefit">
+                <div class="sb-icon">
+                    <img src="front/img/icon-2.png" alt="">
                 </div>
-                <div class="col-lg-4">
-                    <div class="single-benefit">
-                        <div class="sb-icon">
-                            <img src="front/img/icon-2.png" alt="">
-                        </div>
-                        <div class="sb-text">
-                            <h6>Giao hàng đúng hạn</h6>
-                            <p>Uy tín, có trách nhiệm</p>
-                        </div>
-                    </div>
+                <div class="sb-text">
+                    <h6>Giao hàng đúng hạn</h6>
+                    <p>Uy tín, có trách nhiệm</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="single-benefit">
-                        <div class="sb-icon">
-                            <img src="front/img/icon-1.png" alt="">
-                        </div>
-                        <div class="sb-text">
-                            <h6>Thanh toán an toàn</h6>
-                            <p>100% được bảo mật</p>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="single-benefit">
+                <div class="sb-icon">
+                    <img src="front/img/icon-1.png" alt="">
+                </div>
+                <div class="sb-text">
+                    <h6>Thanh toán an toàn</h6>
+                    <p>100% được bảo mật</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </section>
 <!-- Latest Blog Section End -->
 
