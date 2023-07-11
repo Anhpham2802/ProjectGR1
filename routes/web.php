@@ -16,6 +16,7 @@ use App\Http\Controllers\Front\AccountController;
 |
 */
 
+
 Route::get('/', [HomeController::class, 'index']);
 
 Route::prefix('account')->group(function () {

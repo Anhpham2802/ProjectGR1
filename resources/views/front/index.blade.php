@@ -104,7 +104,7 @@
                             <div class="product-price">
                                 @if($womenProduct->discount != null)
                                 {{$womenProduct->discount}}
-                                <span>${{$womenProduct->price}}</span>
+                                <span>{{$womenProduct->price}}k</span>
                                 @else
                                 ${{$womenProduct->price}}
                                 @endif
@@ -128,7 +128,7 @@
                     ut labore et dolore</p>
                 <div class="product-price">
                     359.000đ
-                    <span>/ Túi xách</span>
+                    <span>/ Túi du lịch</span>
                 </div>
             </div>
             <div class="countdown-timer" id="countdown">
@@ -194,7 +194,7 @@
                             <div class="product-price">
                                 @if($menProduct->discount != null)
                                 {{$menProduct->discount}}
-                                <span>${{$menProduct->price}}</span>
+                                <span>{{$menProduct->price}}k</span>
                                 @else
                                 ${{$menProduct->price}}
                                 @endif
